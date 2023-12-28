@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', '@vite-pwa/nuxt'],
+  modules: ['@nuxtjs/tailwindcss', '@vite-pwa/nuxt', '@pinia/nuxt', 'nuxt-simple-sitemap', '@nuxtjs/html-validator'],
   css: ['~/assets/css/index.css'],
   postcss: {
     plugins: {
@@ -19,26 +19,26 @@ export default defineNuxtConfig({
       "short_name": "ds",
       "description": "development-space",
       "icons": [
-          {
-              "src": "/favicons/icon-192x192.png",
-              "sizes": "192x192",
-              "type": "image/png"
-          },
-          {
-              "src": "/favicons/icon-256x256.png",
-              "sizes": "256x256",
-              "type": "image/png"
-          },
-          {
-              "src": "/favicons/icon-384x384.png",
-              "sizes": "384x384",
-              "type": "image/png"
-          },
-          {
-              "src": "/favicons/icon-512x512.png",
-              "sizes": "512x512",
-              "type": "image/png"
-          }
+        {
+          "src": "/favicons/icon-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        },
+        {
+          "src": "/favicons/icon-256x256.png",
+          "sizes": "256x256",
+          "type": "image/png"
+        },
+        {
+          "src": "/favicons/icon-384x384.png",
+          "sizes": "384x384",
+          "type": "image/png"
+        },
+        {
+          "src": "/favicons/icon-512x512.png",
+          "sizes": "512x512",
+          "type": "image/png"
+        }
       ]
     },
     registerType: 'autoUpdate',

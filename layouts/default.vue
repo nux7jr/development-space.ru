@@ -1,5 +1,6 @@
 <template>
-    <TheHeader></TheHeader>
+    <TheHeader>
+    </TheHeader>
     <main class="dark:bg-primary bg-zinc-200 flex-grow">
         <section class="w-100 flex center justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="908.000000pt" height="65.000000pt"
@@ -42,7 +43,8 @@
         </section>
         <slot></slot>
     </main>
-    <TheFooter></TheFooter>
+    <TheFooter>
+    </TheFooter>
 </template>
 <script setup>
 useHead({
