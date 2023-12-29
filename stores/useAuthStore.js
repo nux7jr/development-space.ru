@@ -11,12 +11,12 @@ export const useAuthStore = defineStore('auth', () => {
         });
 
         // const fo = useCookie('token');
-        // setCookie('token', 'yourToken', {
-        //     path: '/',
-        //     maxAge: 60 * 60 * 24,
-        //     secure: process.env.NODE_ENV === 'production',
-        //     sameSite: 'Strict',
-        // });
+        setCookie('token', ans.value.token, {
+            path: '/',
+            maxAge: 60 * 60 * 24,
+            secure: process.env.NODE_ENV === 'production',
+            sameSite: 'Strict',
+        });
         // const { data: userData } = await useApiFetch('/user/profile');
         // user.value = await userData.value[0];
     }

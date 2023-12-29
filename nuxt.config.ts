@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', '@vite-pwa/nuxt', '@pinia/nuxt', 'nuxt-simple-sitemap', '@nuxtjs/html-validator'],
+  modules: ['@nuxtjs/tailwindcss', '@vite-pwa/nuxt', '@pinia/nuxt', 'nuxt-simple-sitemap', '@nuxt/image', '@nuxtjs/html-validator'],
   css: ['~/assets/css/index.css'],
   postcss: {
     plugins: {

@@ -4,6 +4,7 @@ export default {
     'components/**/*.{js,ts,tsx,vue}',
   ],
   theme: {
+    current: 'currentColor',
     extend: {
       boxShadow: {
         thick: "0px 7px 32px rgb(0 0 0 / 35%);",

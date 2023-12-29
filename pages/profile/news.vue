@@ -3,4 +3,7 @@
 </template>
 <script setup>
 useHead({ title: 'Профиль' });
+definePageMeta({
+    layout: 'auth'
+})
 </script>

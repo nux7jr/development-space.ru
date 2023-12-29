@@ -7,7 +7,7 @@
                     <form class="" @submit.prevent="handeleLogin($event)">
                         <UiBackButton></UiBackButton>
                         <h2 class="text-3xl mb-6 mt-6 font-medium lg:text-4xl tracking-tight text-primary dark:text-white">
-                            Вход
+                            Регистрация
                         </h2>
                         <div class="mb-4">
                             <label class="block text-sm text-zinc-500 dark:text-zinc-400 mb-2" for="email">
@@ -16,6 +16,14 @@
                             <input
                                 class="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                 id="email" type="text" placeholder="Email" required name="email">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-sm text-zinc-500 dark:text-zinc-400 mb-2" for="name">
+                                Ваше имя
+                            </label>
+                            <input
+                                class="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                id="name" type="text" placeholder="Email" required name="name">
                         </div>
                         <div class="mb-6">
                             <label class="block text-sm text-zinc-500 dark:text-zinc-400 mb-2" for="password">
@@ -29,16 +37,10 @@
                         <div class="flex items-center justify-between mb-6">
 
                             <button type="submit"
-                                class="cursor-pointer text-center text-sm py-2 w-full px-4 h-12 font-semibold focus:ring-2 rounded-lg bg-primary dark:bg-white dark:text-primary dark:hover:text-white hover:text-primary dark:hover:bg-white/5 hover:bg-primary/10 text-white flex duration-200 focus:ring-offset-2 focus:ring-inline-flex items-center justify-between">
-                                Вход </button>
+                                class="cursor-pointer justify-center text-sm py-2 w-full px-4 h-12 font-semibold focus:ring-2 rounded-lg bg-primary dark:bg-white dark:text-primary dark:hover:text-white hover:text-primary dark:hover:bg-white/5 hover:bg-primary/10 text-white flex duration-200 focus:ring-offset-2 focus:ring-inline-flex items-center justify-between">
+                                Зарегистрироваться </button>
                         </div>
-                        <div class="flex flex-col justify-center items-center">
-                            <p class="text-sm text-primary dark:text-white">Не аккаунта?</p>
-                            <NuxtLink class="text-sm text-primary dark:text-white underline underline-offset-4"
-                                to="/registration">
-                                Создать аккаунт
-                            </NuxtLink>
-                        </div>
+
                     </form>
                 </div>
             </div>
