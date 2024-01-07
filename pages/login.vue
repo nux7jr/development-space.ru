@@ -26,6 +26,7 @@
                                 id="password" type="password" placeholder="******************" required name="password">
 
                         </div>
+                        <div>error: {{ err }}</div>
                         <div class="flex items-center justify-between mb-6">
 
                             <button type="submit"
@@ -53,12 +54,18 @@ definePageMeta({
 useHead({ title: 'Авторизация' });
 
 const auth = useAuthStore();
-
+const err = ref(null)
 async function handeleLogin(evt) {
     evt.preventDefault();
     const userData = new FormData(evt.target);
     const jsonData = JSON.stringify(Object.fromEntries(userData));
-    await auth.login(jsonData);
-    navigateTo('/blog');
+    const res = await auth.login(jsonData);
+    err.value = res;
+    setTimeout(() => {
+        err.value = ''
+    }, 3000);
+    if (!err.value) {
+        navigateTo('/profile');
+    }
 }
 </script>

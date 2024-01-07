@@ -11,7 +11,7 @@ export function useApiFetch(path, options) {
         ...options,
         headers: {
             ...headers,
-            ...options.headers
+            // ...options.headers
         }
     });
 }

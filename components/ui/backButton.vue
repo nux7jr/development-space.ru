@@ -1,5 +1,5 @@
 <template>
-    <button @click="goBack">
+    <button type="button" @click="goBack">
         <svg xmlns="http://www.w3.org/2000/svg" class="dark:fill-current  dark:text-white" version="1.0" width="30px"
             height="30px" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
 

@@ -52,7 +52,7 @@
                                 </NuxtLink>
                             </li>
                             <li v-if="auth.user" class="shrink-0">
-                                <NuxtLink to="/login"
+                                <NuxtLink to="/profile"
                                     class="py-2 w-auto px-4 border-2 h-8 rounded-full border-text-primary duration-200 focus:ring-offset-2 inline-flex items-center justify-center ring-2 focus:ring-black ring-transparent">
                                     {{ auth.user.name }}
                                 </NuxtLink>
